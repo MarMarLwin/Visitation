@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "colorPrimary">#3F51B5</color>
+    <color name = "colorPrimaryDark">#152280</color>
+    <color name = "colorAccent">#D81B60</color>
+    <color name = "LoginButtonColor">#ca1b20</color>
+    <color name = "colorSecondary">#0DB318</color>
+    <color name = "holoGreenDark">#296E01</color>
+    <color name = "blueGrey">#eceff1</color>
+    <color name = "colorPrimaryGreen">#2e7d32</color>
+    <color name = "tabSelectedColor">#eeeeee</color>
+    <color name = "colorLimeLight">#f9fbe7</color>
+    <color name = "colorFollowUp">#f1c40f</color>
+    <color name="colorTextView">#333333</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="white">#ffffff</color>
+
+</resources>

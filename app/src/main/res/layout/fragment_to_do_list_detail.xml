@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:padding = "@dimen/max_dimen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:minWidth = "250dp"
+        tools:context = ".Fragments.ToDoListDetailFragment">
+
+        <ImageView
+            android:id = "@+id/tdlDetailCloseImageView"
+            android:layout_width = "wrap_content"
+            android:layout_height = "0dp"
+            android:background = "@drawable/round_background_blue_grey"
+            app:layout_constraintBottom_toBottomOf = "@+id/textView"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintTop_toTopOf = "@+id/textView"
+            app:srcCompat = "@drawable/ic_close_24dp"/>
+
+        <TextView
+            android:id = "@+id/textView"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:background = "@drawable/round_background"
+            android:backgroundTint = "@color/blueGrey"
+            android:gravity = "center"
+            android:text = "TODO List Detail"
+            android:textSize = "@dimen/header_font_size"
+            app:layout_constraintEnd_toStartOf = "@+id/tdlDetailCloseImageView"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/msgDetailsLayout"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "8dp"
+            android:background = "@drawable/round_background"
+            android:backgroundTint = "@color/blueGrey"
+            android:padding = "@dimen/med_dimen"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textView">
+
+            <ImageView
+                android:id = "@+id/assignByImageViewDetail"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                app:layout_constraintEnd_toStartOf = "@+id/todoMessageDetailAssignBy"
+                app:layout_constraintTop_toBottomOf = "@+id/todoMessageDetailTextView"
+                app:srcCompat = "@drawable/ic_assign_person_24dp"/>
+
+            <ImageView
+                android:id = "@+id/assignByTimeImageViewDetail"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/todoMessageDetailTextView"
+                app:srcCompat = "@drawable/ic_assign_time_24dp"/>
+
+            <TextView
+                android:id = "@+id/todoMessageDetailTextView"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:minLines = "3"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"/>
+
+            <TextView
+                android:id = "@+id/todoMessageDetailDateTime"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@+id/todoMessageDetailTextView"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "3dp"
+                app:layout_constraintBottom_toBottomOf = "@+id/assignByTimeImageViewDetail"
+                app:layout_constraintStart_toEndOf = "@+id/assignByTimeImageViewDetail"
+                app:layout_constraintTop_toTopOf = "@+id/assignByTimeImageViewDetail"/>
+
+            <TextView
+                android:id = "@+id/todoMessageDetailAssignBy"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@+id/todoMessageDetailTextView"
+                android:layout_alignParentEnd = "true"
+                android:layout_marginTop = "3dp"
+                app:layout_constraintBottom_toBottomOf = "@+id/assignByImageViewDetail"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "@+id/assignByImageViewDetail"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/msgDetailsLayout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id = "@+id/todoListDetailCommentTextLayout"
+                style = "@style/RoundCornerEditTextBox"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:hint = "@string/comment"
+                app:layout_constraintBottom_toTopOf = "@+id/todoListStatusRadioButtonGroup"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id = "@+id/todoListDetailCommentEditText"
+                    style = "@style/CommentTextInputLayout"
+                    android:layout_width = "match_parent"
+                    android:gravity = "start"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id = "@+id/todoListStatusRadioButtonGroup"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@+id/todoListDetailCommentTextLayout"
+                android:orientation = "horizontal"
+                app:layout_constraintBottom_toTopOf = "@+id/todoMessageSummitButton"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent">
+
+                <RadioButton
+                    android:id = "@+id/completeRadioButton"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight = "1"
+                    android:gravity = "center|start"
+                    android:text = "@string/complete"/>
+
+                <RadioButton
+                    android:id = "@+id/followUpRadioButton"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight = "1"
+
+                    android:gravity = "center|start"
+                    android:text = "@string/follow_up"/>
+            </RadioGroup>
+
+            <Button
+                android:id = "@+id/todoMessageSummitButton"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@+id/todoListStatusRadioButtonGroup"
+                android:layout_alignParentEnd = "true"
+                android:background = "@drawable/round_button"
+                android:backgroundTint = "@color/colorPrimary"
+                android:text = "@string/submit"
+                android:textAllCaps = "true"
+                android:textColor = "@android:color/white"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintHorizontal_bias = "0.0"
+                app:layout_constraintStart_toStartOf = "parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

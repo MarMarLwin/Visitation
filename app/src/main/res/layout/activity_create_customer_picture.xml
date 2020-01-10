@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:padding = "10dp">
+
+    <!--<ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    app:cardBackgroundColor="@color/blueGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/customerPicture1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add_photo"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    app:cardBackgroundColor="@color/blueGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                <ImageView
+                        android:id="@+id/customerPicture2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add_photo"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    app:cardBackgroundColor="@color/blueGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                <ImageView
+                        android:id="@+id/customerPicture3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add_photo"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>-->
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "8dp"
+        android:layout_marginBottom = "8dp"
+        android:gravity = "center"
+        android:orientation = "vertical"
+        app:layout_constraintBottom_toTopOf = "@+id/constraintLayout4"
+        app:layout_constraintTop_toTopOf = "parent"
+        tools:layout_editor_absoluteX = "10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id = "@+id/cardView"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            app:cardBackgroundColor = "@color/blueGrey">
+
+            <ImageView
+                android:id = "@+id/customerPicture1"
+                android:layout_width = "match_parent"
+                android:layout_height = "300dp"
+                android:scaleType = "fitXY"
+                android:src = "@drawable/ic_add_photo"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/constraintLayout4"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent">
+
+        <Button
+            android:id = "@+id/previousButton"
+            style = "@style/RoundCornerButtonRed"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_marginEnd = "8dp"
+            android:text = "@string/previous"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toStartOf = "@+id/nextButton"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"/>
+
+        <Button
+            android:id = "@+id/nextButton"
+            style = "@style/RoundCornerButtonBlue"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "8dp"
+            android:text = "@string/next"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toEndOf = "@+id/previousButton"
+            app:layout_constraintTop_toTopOf = "parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

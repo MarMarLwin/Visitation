@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/round_background"
+    android:padding = "@dimen/min_dimen">
+
+    <TextView
+        android:id = "@+id/customerNameTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginEnd = "8dp"
+        android:gravity = "center"
+        android:minWidth = "200dp"
+        android:text = "Junction Maw Tin"
+        android:textAppearance = "@style/TextAppearance.AppCompat.Large"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toTopOf = "@+id/customerPhoneTextView"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"/>
+
+    <ImageView
+        android:id = "@+id/imageView"
+        android:layout_width = "25dp"
+        android:layout_height = "25dp"
+        android:layout_marginBottom = "8dp"
+        android:contentDescription = "@string/customer_phone"
+        app:layout_constraintBottom_toTopOf = "@+id/imageView2"
+        app:layout_constraintEnd_toStartOf = "@+id/customerPhoneTextView"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/customerPhoneTextView"
+        app:layout_constraintVertical_bias = "0.6"
+        app:srcCompat = "@drawable/ic_phone_call"/>
+
+    <TextView
+        android:id = "@+id/customerPhoneTextView"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:text = "09400123456"
+        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.134"
+        app:layout_constraintStart_toEndOf = "@+id/imageView"
+        app:layout_constraintTop_toBottomOf = "@+id/customerNameTextView"/>
+
+    <ImageView
+        android:id = "@+id/imageView2"
+        android:layout_width = "25dp"
+        android:layout_height = "25dp"
+        android:layout_marginBottom = "8dp"
+        android:contentDescription = "@string/customer_email"
+        app:layout_constraintBottom_toTopOf = "@+id/imageView3"
+        app:layout_constraintEnd_toStartOf = "@+id/customerEmailTextView"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/customerEmailTextView"
+        app:srcCompat = "@drawable/ic_mail_outline"/>
+
+    <TextView
+        android:id = "@+id/customerEmailTextView"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:text = "gg@asd.com"
+        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toEndOf = "@+id/imageView2"
+        app:layout_constraintTop_toBottomOf = "@+id/customerPhoneTextView"/>
+
+    <ImageView
+        android:id = "@+id/imageView3"
+        android:layout_width = "25dp"
+        android:layout_height = "25dp"
+        android:layout_marginEnd = "8dp"
+        android:contentDescription = "@string/customer_address"
+        app:layout_constraintBottom_toBottomOf = "@+id/customerAddressTextView"
+        app:layout_constraintEnd_toStartOf = "@+id/customerAddressTextView"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/customerAddressTextView"
+        app:srcCompat = "@drawable/ic_customer_location"/>
+
+    <TextView
+        android:id = "@+id/customerAddressTextView"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:text = "Sanchaung, Yangon"
+        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.0"
+        app:layout_constraintStart_toEndOf = "@+id/imageView2"
+        app:layout_constraintTop_toBottomOf = "@+id/customerEmailTextView"/>
+
+    <ImageView
+        android:id = "@+id/imageView4"
+        android:layout_width = "25dp"
+        android:layout_height = "25dp"
+        android:layout_marginEnd = "8dp"
+        android:layout_marginBottom = "8dp"
+        android:visibility="gone"
+        android:contentDescription = "@string/assign_date_time"
+        app:layout_constraintBottom_toBottomOf = "@+id/lastCheckInTextView"
+        app:layout_constraintEnd_toStartOf = "@+id/customerAddressTextView"
+        app:layout_constraintHorizontal_bias = "1.0"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/lastCheckInTextView"
+        app:layout_constraintVertical_bias = "0.0"
+        app:srcCompat = "@drawable/clock_green"/>
+
+    <TextView
+        android:id = "@+id/lastCheckInTextView"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:visibility="gone"
+        android:text = "10-08-2019 03:04 PM"
+        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.0"
+        app:layout_constraintStart_toEndOf = "@+id/imageView3"
+        app:layout_constraintTop_toBottomOf = "@+id/customerAddressTextView"
+        app:layout_constraintVertical_bias = "0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

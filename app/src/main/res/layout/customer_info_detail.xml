@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:cardview = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id = "@+id/cv"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginEnd = "15dp"
+        android:foreground = "?android:attr/selectableItemBackground"
+        cardview:cardCornerRadius = "5dp"
+        cardview:cardElevation = "2dp"
+        cardview:cardUseCompatPadding = "true"
+        cardview:layout_constraintEnd_toEndOf = "parent"
+        cardview:layout_constraintStart_toStartOf = "parent"
+        cardview:layout_constraintTop_toTopOf = "parent">
+
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "5dp"
+            android:padding = "10dp">
+
+            <TextView
+                android:id = "@+id/customerNameTxtView"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "8dp"
+                android:layout_toStartOf = "@+id/phoneImageView"
+                android:text = "#1 St John City Mall"
+                android:textColor = "@color/colorPrimaryDark"
+                android:textSize = "16sp"
+                android:textStyle = "bold"/>
+
+            <TextView
+                android:id = "@+id/customerAddressTxtView"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@id/customerNameTxtView"
+                android:layout_marginTop = "3dp"
+                android:layout_marginEnd = "8dp"
+                android:layout_toStartOf = "@+id/phoneImageView"
+                android:text = "Pyay Road, Yangon"
+                android:textColor = "@color/colorTextView"
+                android:textSize = "16sp"
+                android:textStyle = "normal"/>
+            <TextView
+                    android:id = "@+id/checkInTxtView"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_below = "@id/customerAddressTxtView"
+                    android:layout_marginTop = "3dp"
+                    android:layout_marginEnd = "8dp"
+                    android:layout_toStartOf = "@+id/phoneImageView"
+                    android:text = "2019-12-19"
+                    android:textColor = "@color/colorTextView"
+                    android:textSize = "16sp"
+                    android:textStyle = "normal"/>
+
+            <ImageView
+                android:id = "@+id/emailImageView"
+                android:layout_width = "25dp"
+                android:layout_height = "25dp"
+                android:layout_alignParentEnd = "true"
+                android:layout_centerVertical = "true"
+                android:src = "@drawable/ic_mail_outline"/>
+
+            <ImageView
+                android:id = "@+id/phoneImageView"
+                android:layout_width = "25dp"
+                android:layout_height = "25dp"
+                android:layout_centerVertical = "true"
+                android:layout_marginEnd = "8dp"
+                android:layout_toStartOf = "@+id/emailImageView"
+                android:src = "@drawable/ic_phone_call"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

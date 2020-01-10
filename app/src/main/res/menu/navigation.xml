@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android = "http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/navigation_home"
+        android:icon = "@drawable/ic_home"
+        android:title = "@string/title_home"
+        />
+
+    <item
+        android:id = "@+id/navigation_route"
+        android:icon = "@drawable/ic_dashboard"
+        android:title = "@string/title_route"
+        />
+
+    <item
+        android:id = "@+id/navigation_customer"
+        android:icon = "@drawable/ic_customer"
+        android:title = "Master"
+        />
+    <item
+        android:id = "@+id/navigation_new_customer"
+        android:icon = "@drawable/ic_add_customer"
+        android:title = "New"
+        />
+
+    <item
+        android:id = "@+id/navigation_report"
+        android:icon = "@drawable/ic_report_blue"
+        android:title = "@string/nav_report"
+        />
+
+</menu>

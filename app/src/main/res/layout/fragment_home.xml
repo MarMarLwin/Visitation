@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/blueGrey"
+    tools:context = ".Fragments.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/checkInoutCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/checkInOutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/checkInImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/checkInTimeTxtView"
+                android:src="@drawable/clock_green"
+                app:layout_constraintBottom_toBottomOf="@+id/filterSpinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/filterSpinner" />
+
+            <TextView
+                android:id="@+id/checkInTimeTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/checkInImageView"
+                android:gravity="center|start"
+                app:layout_constraintBottom_toBottomOf="@+id/checkInImageView"
+                app:layout_constraintStart_toEndOf="@+id/checkInImageView"
+                app:layout_constraintTop_toTopOf="@+id/checkInImageView" />
+
+            <ImageView
+                android:id="@+id/checkOutImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/checkOutTimeTxtView"
+                android:layout_marginStart="8dp"
+                android:layout_toStartOf="@+id/checkOutTimeTxtView"
+                android:src="@drawable/clock_red"
+                app:layout_constraintBottom_toBottomOf="@+id/checkInImageView"
+                app:layout_constraintStart_toEndOf="@+id/checkInTimeTxtView"
+                app:layout_constraintTop_toTopOf="@+id/checkInImageView" />
+
+            <TextView
+                android:id="@+id/checkOutTimeTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center|start"
+                app:layout_constraintBottom_toBottomOf="@+id/checkOutImageView"
+                app:layout_constraintStart_toEndOf="@+id/checkOutImageView"
+                app:layout_constraintTop_toTopOf="@+id/checkOutImageView" />
+
+            <Spinner
+                android:id="@+id/filterSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_by"
+                app:layout_constraintBottom_toBottomOf="@+id/filterSpinner"
+                app:layout_constraintEnd_toStartOf="@+id/filterSpinner"
+                app:layout_constraintTop_toTopOf="@+id/filterSpinner" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id = "@+id/todoListRecyclerViewRefreshLayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_below = "@+id/checkInoutCardView"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/checkInoutCardView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/todoListRecyclerView"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<resources>
+    <!--App Name Related-->
+    <string name = "app_name">OnTheGo Visitation</string>
+    <string name = "title_home">မူလ</string>
+    <string name = "title_route">လမ်းကြောင်း</string>
+    <string name = "title_customer">စားသုံးသူ</string>
+    <string name = "title_new_customer">စားသုံးသူသစ်</string>
+    <string name = "title_report">မှတ်တမ်းများ</string>
+    <string name = "title_activity_login">Sign In</string>
+    <string name = "title_activity_todo_list_detail">ToDo List Detail</string>
+
+    <!-- Strings related to login -->
+    <string name = "username">အမည်</string>
+    <string name = "companyId">ကုမ္ပဏီကုဒ်</string>
+    <string name = "prompt_password">စကားဝှက်</string>
+    <string name = "action_sign_in">လော့အင်ဝင်ရန်</string>
+    <string name = "error_invalid_password">This password is too short</string>
+    <string name = "error_login">Username or Password is incorrect!</string>
+    <string name = "error_field_required">စာဖြည့်ရန်လိုပါသည်</string>
+
+    <!--Fragment and Login related-->
+    <string name = "login_comment">မှတ်ချက်</string>
+    <string name = "check_in">စာရင်းသွင်းမည်</string>
+    <string name = "attendance_in">အလုပ်စမည်</string>
+    <string name = "attendance_out">အလုပ်သိမ်းမည်</string>
+    <string name = "cancel">ပယ်ဖျက်မည်</string>
+    <string name = "nav_report">မှတ်တမ်းများ</string>
+    <string name = "save">သိမ်းမည်</string>
+    <string name = "clear">ရှင်းလင်းမည်</string>
+    <string name = "version">ဗားရှင်း</string>
+    <string name = "recipient">လက်ခံသူအမည်</string>
+    <string name = "attendance_in_time">အလုပ်တက်ချိန်</string>
+    <string name = "device_id">Device ID</string>
+    <string name = "service_stop">Stop</string>
+    <string name = "service_start">Start</string>
+    <string name = "signature_btn_text">လက်မှတ်</string>
+    <string name = "take_picture_btn">ဓာတ်ပုံရိုက်မည်</string>
+    <string name = "comment">Comment</string>
+    <string name = "customer_location_title">တည်နေရာ</string>
+    <string name = "logout_alert_title">အသိပေးချက်!</string>
+    <string name = "logout_alert">ထွက်မှာ သေချာပါသလား။</string>
+    <string name = "attendance_out_alert">အလုပ်ဆင်းမှာသေချာပါသလား</string>
+    <string name = "yes">လုပ်ပါမည်</string>
+    <string name = "no">မလုပ်ပါ</string>
+    <string name = "no_internet">အင်တာနက်ချိတ်ဆက်မှုမရပါ။</string>
+    <string name = "ok">အိုကေ</string>
+    <string name = "loading_msg">ခေတ္တစောင့်ပါ။</string>
+    <string name = "choose_language">ဘာသာစကားရွေးချယ်မည်</string>
+    <string name = "attendance_out_time">အလုပ်ဆင်းချိန်</string>
+    <string name = "to_do_list">လုပ်ဆောင်ရမည့်စာရင်း</string>
+    <string name = "new_password">စကားဝှက်အသစ်</string>
+    <string name = "new_password_again">စကားဝှက်အသစ်နောက်တစ်ကြိမ်</string>
+    <string name = "old_password">စကားဝှက်အဟောင်း</string>
+    <string name = "change_password">စကားဝှက်ပြောင်းမည်</string>
+    <string name = "change_password_successfully">Change password Successfully</string>
+    <string name = "success">အောင်မြင်ပါသည်</string>
+    <string name = "assign_date_time">တာဝန်ပေးချိန်</string>
+    <string name = "assign_by">တာဝန်ပေးသူ</string>
+    <string name = "total">စုစုပေါင်း</string>
+    <string name = "description">Description:</string>
+    <string name = "follow_up">လုပ်ဆောင်နေသည်</string>
+    <string name = "complete">လုပ်ဆောင်ပြီးပြီ</string>
+    <string name = "status">လက်ရှိအခြေအနေ</string>
+    <string name = "todo_list_detail">ToDo List Detail</string>
+    <string name = "submit">Submit</string>
+    <string name = "operation_success">Operation Success!</string>
+    <string name = "activate">Activate</string>
+    <string name = "customer_name">Name</string>
+    <string name = "customer_phone">Phone</string>
+    <string name = "customer_email">Email</string>
+    <string name = "customer_website">Website</string>
+    <string name = "customer_address">Address</string>
+    <string name = "previous">အရင်</string>
+    <string name = "next">နောက်</string>
+    <string name = "error_incorrect_account">Account Does Not Exist or Incorrect Password</string>
+    <string name = "error_bind_account">Account already bind to another device!</string>
+    <string name = "error_authentication_fail">Authentication Failed!</string>
+    <string name = "default_notification_channel_id">11</string>
+    <string name = "dismiss">Dismiss</string>
+    <string name = "read">Read</string>
+    <string name = "filter_by">Filter:</string>
+
+    <!--Array-->
+    <array name = "reason_for_visit">
+        <item>Reason for Visit</item>
+        <item>Wrong Address</item>
+        <item>Wrong Package</item>
+    </array>
+
+    <array name = "todo_list_filter">
+        <item>Today</item>
+        <item>Past</item>
+        <item>Future</item>
+    </array>
+
+    <string name = "check_out">စာရင်းပိတ်မည်</string>
+    <string name = "list">စာရင်း</string>
+    <string name = "map">မြေပုံ</string>
+    <string name = "search">Search</string>
+    <string name = "create_customer">Create Customer</string>
+    <string name = "back_press_text">ထွက်ရန်နောက်တစ်ကြိမ်နှိပ်ပါ</string>
+    <string name = "customer_create_confirm">Are you sure to save?</string>
+    <string name = "customer_contact_name">Contact Name</string>
+    <string name = "invalid_email">Invalid Email Address!!</string>
+    <string name = "invalid_domain">Invalid Domain name!!</string>
+    <string name="tryagain">နောက်တစ်ကြိမ်ထပ်နှိပ်ပါ</string>
+    <string name="takePhoto">ဓါတ်ပုံရိုက်ပါ</string>
+    <string name="checkOutMsg">Please check out previous customer!</string>
+    <string name="totalCus">စုစုပေါင်း :</string>
+</resources>

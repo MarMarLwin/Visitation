@@ -1,0 +1,112 @@
+<resources>
+    <!--App Name Related-->
+    <string name = "app_name">OnTheGo Visitation</string>
+    <string name = "title_home">Home</string>
+    <string name = "title_route">Route</string>
+    <string name = "title_customer">Customer</string>
+    <string name = "title_new_customer">New Customer</string>
+    <string name = "title_activity_login">Sign in</string>
+    <string name = "title_activity_todo_list_detail">ToDo List Detail</string>
+
+    <!-- Strings related to login -->
+    <string name = "username">Username</string>
+    <string name = "companyId">Company ID</string>
+    <string name = "prompt_password">Password</string>
+    <string name = "action_sign_in">Login</string>
+    <string name = "error_invalid_password">This password is too short</string>
+    <string name = "error_login">Username or Password is incorrect!</string>
+    <string name = "error_field_required">This field is required</string>
+
+    <!--Fragment and Login related-->
+    <string name = "login_comment">Comment</string>
+    <string name = "check_in">Check In</string>
+    <string name = "attendance_in">Attendance In</string>
+    <string name = "attendance_out">Attendance Out</string>
+    <string name = "cancel">Cancel</string>
+    <string name = "nav_report">Report</string>
+    <string name = "save">Save</string>
+    <string name = "clear">Clear</string>
+    <string name = "version">Version</string>
+    <string name = "recipient">Recipient\'s name</string>
+    <string name = "attendance_in_time">Attendance In</string>
+    <string name = "device_id">Device ID</string>
+    <string name = "service_stop">Stop</string>
+    <string name = "service_start">Start</string>
+    <string name = "title_report">Report</string>
+    <string name = "signature_btn_text">Signature</string>
+    <string name = "take_picture_btn">Take Picture</string>
+    <string name = "comment">Comment</string>
+    <string name = "customer_location_title">Customer Location</string>
+    <string name = "logout_alert_title">Warning!</string>
+    <string name = "logout_alert">Are you sure want to exit?</string>
+    <string name = "attendance_out_alert">Are you sure want to Attendance Out? It will stop GPS Visitation Service!
+    </string>
+    <string name = "yes">Yes</string>
+    <string name = "no">No</string>
+    <string name = "no_internet">No Internet Connection</string>
+    <string name = "ok">OK</string>
+    <string name = "loading_msg">Loading</string>
+    <string name = "choose_language">Choose Language</string>
+    <string name = "attendance_out_time">Attendance Out</string>
+    <string name = "to_do_list">To Do List</string>
+    <string name = "new_password">Enter new password</string>
+    <string name = "new_password_again">Enter new password again</string>
+    <string name = "old_password">Enter old password</string>
+    <string name = "change_password">Change password</string>
+    <string name = "change_password_successfully">Change password Successfully</string>
+    <string name = "success">Success!</string>
+    <string name = "assign_date_time">Assign Date Time</string>
+    <string name = "assign_by">Assign By</string>
+    <string name = "total">Total</string>
+    <string name = "description">Description</string>
+    <string name = "follow_up">Follow up</string>
+    <string name = "complete">Complete</string>
+    <string name = "status">Status</string>
+    <string name = "todo_list_detail">ToDo List Detail</string>
+    <string name = "submit">Submit</string>
+    <string name = "operation_success">Operation Success!</string>
+    <string name = "activate">Activate</string>
+    <string name = "customer_name">Name</string>
+    <string name = "customer_phone">Phone</string>
+    <string name = "customer_email">Email</string>
+    <string name = "customer_website">Website</string>
+    <string name = "customer_address">Address</string>
+    <string name = "previous">Previous</string>
+    <string name = "next">Next</string>
+    <string name = "error_incorrect_account">Account Does Not Exist or Incorrect Password</string>
+    <string name = "error_bind_account">Account already bind to another device!</string>
+    <string name = "error_authentication_fail">Authentication Failed!</string>
+    <string name = "default_notification_channel_id">11</string>
+    <string name = "dismiss">Dismiss</string>
+    <string name = "read">Read</string>
+    <string name = "filter_by">Filter:</string>
+
+    <!--Array-->
+    <array name = "reason_for_visit">
+        <item>Reason for Visit</item>
+        <item>Wrong Address</item>
+        <item>Wrong Package</item>
+    </array>
+
+    <array name = "todo_list_filter">
+        <item>Today</item>
+        <item>Past</item>
+        <item>Future</item>
+    </array>
+
+    <string name = "check_out">Check Out</string>
+    <string name = "list">List</string>
+    <string name = "map">Maps</string>
+    <string name = "back_press_text">Press back again to exit</string>
+    <string name = "search">Search</string>
+    <string name = "create_customer">Create Customer</string>
+    <string name = "customer_create_confirm">Are you sure to save?</string>
+    <string name = "customer_contact_name">Contact Name</string>
+    <string name = "invalid_email">Invalid Email Address!!</string>
+    <string name = "invalid_domain">Invalid Domain name!!</string>
+    <string name="tryagain">Please try again!</string>
+    <string name="takePhoto">Please take a photo!</string>
+    <string name="checkOutMsg">Please check out previous customer!</string>
+    <string name="totalCus">Total Customers :</string>
+
+</resources>
